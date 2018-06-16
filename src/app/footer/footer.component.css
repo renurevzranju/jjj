@@ -1,0 +1,22 @@
+.footer-container{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    padding-bottom: 5px
+}
+
+.attribution-small { display: none; }
+.attribution { display: inline-block; }
+
+@media only screen and (max-width: 360px) {
+    .footer-container{
+        padding-left: 50px;
+    }
+
+    .attribution-small { display: inline-block; }
+    .attribution { display: none; }
+}

@@ -1,0 +1,77 @@
+.sidenav {
+    height: 100%;
+    width: 73px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 95px;
+}
+
+.sidenav li {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav li:hover {
+    color: #f1f1f1;
+    cursor: pointer;
+}
+
+.icon-padding{
+    padding:  17px 10px;
+    text-align: center;
+}
+
+li {
+    display: none;
+}
+
+.sidenav ul {
+    padding: 0px;
+}
+
+@media only screen and (max-width: 360px) {
+    .sidenav {
+        width: 57px;
+    }
+
+    .sidenav li{
+        padding: 6px 0px 6px 8px;
+        font-size: 19px;
+    }
+}
+
+
+@media only screen and (max-width: 510px) {
+    .sidenav li{
+        padding: 6px 0px 5px 12px;
+        font-size: 23px;
+    }
+}
+
+@media only screen and (max-width: 765px) {
+    .sidenav li{
+        padding: 6px 0px 5px 12px;
+        font-size: 23px;
+    }
+
+    .sidenav {
+        width: 70px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .sidenav {
+        width: 70px;
+    }
+
+    .sidenav li{
+        padding: 5px 8px 6px 11px;
+    }
+}
