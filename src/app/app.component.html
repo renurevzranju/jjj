@@ -1,0 +1,30 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="sidenav">
+    <ul>
+        <li>
+            <i routerLink="/" routerLinkActive="active"  [routerLinkActiveOptions]="{ exact: true }" class="icon-padding fa fa-home"></i>
+            <!-- <span class="nav-text">Home</span> -->
+        </li>
+        <li>
+            <i routerLink="/myProjects" routerLinkActive="active" class=" icon-padding fa fa-tasks"></i>
+            <!-- <span class="nav-text">Dashboard</span> -->
+        </li>
+        <li>
+            <i routerLink="/graduation" routerLinkActive="active" class="icon-padding fa fa-graduation-cap"></i>
+            <!-- <span class="nav-text">Education</span> -->
+        </li>
+        <li>
+            <i routerLink="/resume" routerLinkActive="active" class="icon-padding fa fa-line-chart"></i>
+            <!-- <span class="nav-text">Skills</span> -->
+        </li>
+        <li>
+            <i routerLink="/contact" routerLinkActive="active" class="icon-padding fa fa-envelope"></i>
+            <!-- <span class="nav-text">Contact</span> -->
+        </li>
+    </ul>
+</div>
+<app-header></app-header>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
+
+
