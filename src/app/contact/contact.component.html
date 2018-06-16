@@ -1,26 +1,35 @@
 <div class="contact-container">
-    <h2 class="formHead">Contact Me<i class="fa fa-paper-plane" style="padding-left: 10px;"></i></h2>
-    <form class="form-container">
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-            <input type="email" id="mail" name="mailId" placeholder="Your Email ID">
-            <textarea type="text" id="desc" name="dsec" placeholder="Your Message.."></textarea>
+    <h2 class="formHead">Contact Me
+        <i class="fa fa-paper-plane" style="padding-left: 10px;"></i>
+    </h2>
+    <form class="form-container" method="POST" action="https://script.google.com/macros/s/AKfycbzgezzQnuDhTDeLCWut5spCl52mS1LH4tQAiwhvNw/exec">
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." [(ngModel)]="data.name">
+        <input type="email" id="mail" name="mailId" placeholder="Your Email ID" [(ngModel)]="data.email">
+        <textarea type="text" id="desc" name="dsec" placeholder="Your Message.." [(ngModel)]="data.message"></textarea>
         <div class="form-group">
-            <button class="btn btn-success btn-style" type="submit" value="Submit">SEND</button>
+            <button class="btn btn-success btn-style" type="submit" (click)="Submit()" value="Submit">SEND</button>
         </div>
     </form>
     <div class="row contact-info">
         <div class="col-md-3 tab-full">
-            <div class="icon"><i class="fa fa-map-marker"></i></div>
+            <div class="icon">
+                <i class="fa fa-map-marker"></i>
+            </div>
             <h5>My Address</h5>
-            <p>Pondicherry<br>India</p>
+            <p>Pondicherry
+                <br>India</p>
         </div>
         <div class="col-md-3 tab-full">
-            <div class="icon"><i class="fa fa-envelope"></i></div>
+            <div class="icon">
+                <i class="fa fa-envelope"></i>
+            </div>
             <h5>Write me at</h5>
             <p>revathimeenashi@gmail.com</p>
         </div>
         <div class="col-md-3 tab-full">
-            <div class="icon"><i class="fa fa-phone"></i></div>
+            <div class="icon">
+                <i class="fa fa-phone"></i>
+            </div>
             <h5>Call me at</h5>
             <p>805698482</p>
         </div>

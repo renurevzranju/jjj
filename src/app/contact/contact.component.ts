@@ -7,12 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
   nameList: any;  
-  data = [];
+  data={
+    name:"",
+    email:"",
+    message:""
+  }
   nameId:Number;
   constructor() { 
-    this.data=["Austriala","Japan","India","Russia","Italy","Mexico","Canada"]
   }
 
   ngOnInit() {
-  }     
+  }   
+  
+  Submit(){
+    this.data.name="";
+    this.data.email="";
+    this.data.message="";
+  }
 }  
