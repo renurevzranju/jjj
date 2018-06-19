@@ -15,7 +15,7 @@ export class HeaderComponent implements OnInit {
   
   constructor() { 
     this.dt= new Date();
-    if(this.thehours < 0){
+    if(this.thehours > 3){
       this.greet = this.Gm
     }else if(this.thehours >= 12 && this.thehours < 17 ){
       this.greet = this.Ga    
